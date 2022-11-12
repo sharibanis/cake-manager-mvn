@@ -67,7 +67,7 @@ class LoadDatabase {
                 session.close();
 
                 nextToken = parser.nextToken();
-                log.infon(nextToken);
+                log.info(nextToken);
 
                 nextToken = parser.nextToken();
                 log.info(nextToken);
