@@ -1,5 +1,5 @@
 SOLUTION README:
-
+=================
 1. The solution is based on Java 15/Maven/SpringBoot REST API
 2. The REST service is built upon Springboot
 	a. The CakeApplication class automatically uploads all the cakes into the HSQL DB upon startup
