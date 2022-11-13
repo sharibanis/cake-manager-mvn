@@ -15,7 +15,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+//@Configuration
 class LoadDatabase {
 
   private static final Logger log = LoggerFactory.getLogger(LoadDatabase.class);
@@ -67,14 +67,14 @@ class LoadDatabase {
                 session.close();
 
                 nextToken = parser.nextToken();
-                log.info(nextToken);
+                log.info(nextToken.toString());
 
-                nextToken = parser.nextToken();
-                log.info(nextToken);
+                nextToken = parser.nextToken();	
+                log.info(nextToken.toString());
             }
 
         } catch (Exception ex) {
-            throw new ServletException(ex);
+            throw new Exception(ex);
         }
     	
 		//log.info("Preloading " + repository.save(new Employee("Bilbo Baggins", "burglar")));
